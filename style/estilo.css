@@ -13,10 +13,11 @@
 }
 body{
     background-color: var(--cor3);
+    margin: auto;
 }
 header, footer{
     background-color: var(--cor1);
-    width: 764px;
+    
     height: 89px;
 }
 header > h1{
@@ -42,6 +43,8 @@ nav  ul, li{
 
 section {
     display: flex;
+    align-items: center;
+    margin: auto;
 }
 div> h1{
     font-weight: 600;
@@ -62,4 +65,12 @@ div> img{
     width: 346px;
 height: 304px;
 
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+main{
+    width: 650px;
+    margin: auto;
 }
