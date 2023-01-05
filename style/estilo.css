@@ -6,6 +6,7 @@
     --cor5: ; 
 
 }
+@import url('https://fonts.googleapis.com/css2? family=DM+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Smooch+Sans:wght@100;200;300;400&display=swap');
     
 *{
     margin: 0;
@@ -14,26 +15,28 @@
 body{
     background-color: var(--cor3);
     margin: auto;
+    font-family: 'DM Sans', 'Inter', sans-serif;
 }
 header, footer{
     background-color: var(--cor1);
-    
     height: 89px;
 }
 header > h1{
-    width: 226px;
     height: 36px;
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
     color: #ffffff;
-    padding: 20px;
+    padding: 30px;
+    margin-left: 85px ;
+
 }
 span{
     color: #99B9FF;
 }
 nav{
     padding: 15px;
+    margin-left: 100px ;
+    
 }
 nav  ul, li{ 
     display: flex;
@@ -48,8 +51,9 @@ section {
 }
 div> h1{
     font-weight: 600;
-font-size: 25px;
-line-height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
 
 color: #6B3ACB;
 }
@@ -57,20 +61,38 @@ div > p{
     width: 240px;
     height: 90px;
     font-weight: 300;
-font-size: 10px;
-line-height: 15px;
-text-align: justify;
+    font-size: 1em;
+    line-height: 15px;
+    text-align: justify;
 }
 div> img{
     width: 346px;
-height: 304px;
+    height: 304px;
 
 }
-
 .row-reverse{
     flex-direction: row-reverse;
 }
 main{
     width: 650px;
     margin: auto;
+}
+footer > h1{
+    height: 36px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+}
+footer > div, footer > ul{
+    display: flex;
+    margin: auto;
+    
+    justify-content: center;
+    font-size: 10px;
+}
+
+footer > div > img{
+    width: 50px;
+    height: 20px;
 }
