@@ -38,7 +38,7 @@ nav{
     margin-left: 100px ;
     
 }
-nav  ul, li{ 
+nav  ul, nav li{ 
     display: flex;
     list-style: none;
     margin-right: 30px;
@@ -84,15 +84,25 @@ footer > h1{
     line-height: 24px;
     color: #ffffff;
 }
-footer > div, footer > ul{
-    display: flex;
-    margin: auto;
-    
-    justify-content: center;
-    font-size: 10px;
+footer{
+    width: 100%;
 }
 
-footer > div > img{
-    width: 50px;
-    height: 20px;
+footer > .simbolos > img{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+footer ul, footer li{
+    display: flex;
+    margin: 5px;
+}
+
+footer > .simbolos, footer > ul , footer > p{
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    
 }
