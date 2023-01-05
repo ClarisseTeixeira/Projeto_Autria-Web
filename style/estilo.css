@@ -14,18 +14,17 @@
 }
 body{
     background-color: var(--cor3);
-    margin: auto;
     font-family: 'DM Sans', 'Inter', sans-serif;
 }
 header, footer{
     background-color: var(--cor1);
-    height: 89px;
+    height: 100px;
+    color: #ffffff;
 }
 header > h1{
     height: 36px;
     font-weight: 700;
     font-size: 30px;
-    color: #ffffff;
     padding: 30px;
     margin-left: 85px ;
 
@@ -54,8 +53,7 @@ div> h1{
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 15px;
-
-color: #6B3ACB;
+    color: #6B3ACB;
 }
 div > p{
     width: 240px;
@@ -77,32 +75,28 @@ main{
     width: 650px;
     margin: auto;
 }
-footer > h1{
-    height: 36px;
-    font-weight: 300;
+footer > div> h1{
     font-size: 20px;
-    line-height: 24px;
     color: #ffffff;
-}
-footer{
-    width: 100%;
+    display: flex;
+    height: 36px;
+    font-weight: 700;
+    padding: 30px;
+    margin: 85px;
 }
 
-footer > .simbolos > img{
+
+ .simbolos > img{
     width: 32px;
     height: 32px;
-    margin: 5px;
+    margin-left: 5px;
 }
 
 footer ul, footer li{
     display: flex;
-    margin: 5px;
+    margin-left: 5px;
 }
 
-footer > .simbolos, footer > ul , footer > p{
-    justify-content: center;
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    
+footer > p{
+    margin-top: 3px ;
 }
