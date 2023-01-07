@@ -33,7 +33,7 @@ span{
     color: #99B9FF;
 }
 nav{
-    padding: 15px;
+    padding: 10px;
     margin-left: 100px ;
     
 }
@@ -42,8 +42,14 @@ nav  ul, nav li{
     list-style: none;
     margin-right: 30px;
 }
+nav a{
+    color: #000000;
+}
+a{
+    text-decoration: none;
+}
 
-section {
+main > section {
     display: flex;
     align-items: center;
     margin: auto;
@@ -57,10 +63,8 @@ div> h1{
 }
 div > p{
     width: 240px;
-    height: 90px;
     font-weight: 300;
     font-size: 1em;
-    line-height: 15px;
     text-align: justify;
 }
 div> img{
@@ -74,29 +78,36 @@ div> img{
 main{
     width: 650px;
     margin: auto;
+    padding: 20px;
 }
-footer > div> h1{
-    font-size: 20px;
-    color: #ffffff;
-    display: flex;
-    height: 36px;
-    font-weight: 700;
-    padding: 30px;
-    margin: 85px;
-}
-
-
- .simbolos > img{
+footer> div > img{
     width: 32px;
     height: 32px;
-    margin-left: 5px;
+    margin-left: 30px;
 }
-
 footer ul, footer li{
     display: flex;
-    margin-left: 5px;
+    margin-left: 7px;
 }
 
-footer > p{
-    margin-top: 3px ;
+footer{
+    display: flex;
+    padding: 0  ;
+}
+.titulorodape > h1{
+    color: #ffffff;
+    padding: 15px;
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.elerodape{
+    padding: 10px;
+    margin-left: 30%;
+}
+.elerodape a, .elerodape p{
+    margin-top: 5px;
+}
+footer a{
+    color: hsl(0, 5%, 71%);
 }
