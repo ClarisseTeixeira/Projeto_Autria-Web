@@ -67,10 +67,9 @@ div > p{
     font-size: 1em;
     text-align: justify;
 }
-div> img{
+div > img{
     width: 346px;
     height: 304px;
-
 }
 .row-reverse{
     flex-direction: row-reverse;
