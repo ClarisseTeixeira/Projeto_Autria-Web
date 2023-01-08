@@ -26,7 +26,7 @@ header > h1{
     font-weight: 700;
     font-size: 30px;
     padding: 30px;
-    margin-left: 85px ;
+    margin-left: 60px ;
 
 }
 span{
@@ -34,7 +34,8 @@ span{
 }
 nav{
     padding: 10px;
-    margin-left: 100px ;
+    margin-left: 80px;
+
     
 }
 nav  ul, nav li{ 
@@ -49,10 +50,15 @@ a{
     text-decoration: none;
 }
 
+
+
+
 main > section {
+    position: relative;
     display: flex;
     align-items: center;
     margin: auto;
+    justify-content: space-between;
 }
 div> h1{
     font-weight: 600;
@@ -62,23 +68,29 @@ div> h1{
     color: #6B3ACB;
 }
 div > p{
-    width: 240px;
+    width: 264px;
     font-weight: 300;
     font-size: 1em;
     text-align: justify;
 }
 div > img{
-    width: 346px;
-    height: 304px;
+    width: 264px;
+    height: 264px;
 }
 .row-reverse{
     flex-direction: row-reverse;
 }
 main{
-    width: 650px;
+    width: 600px;
     margin: auto;
     padding: 20px;
+    position: relative;
+    
 }
+
+
+
+
 footer> div > img{
     width: 32px;
     height: 32px;
@@ -91,22 +103,38 @@ footer ul, footer li{
 
 footer{
     display: flex;
-    padding: 0  ;
 }
 .titulorodape > h1{
     color: #ffffff;
     padding: 15px;
     width: 20%;
-    margin-left: 10px;
     margin-top: 15px;
 }
 .elerodape{
     padding: 10px;
-    margin-left: 30%;
+    margin: auto;
 }
 .elerodape a, .elerodape p{
     margin-top: 5px;
 }
 footer a{
     color: hsl(0, 5%, 71%);
+}
+@media(max-width: 800px) {
+    
+main > section {
+    flex-direction: column;
+}
+.row-reverse{
+    flex-direction: column;
+}
+main{
+    width: 380px;
+    margin: auto;
+}
+div> h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
 }
