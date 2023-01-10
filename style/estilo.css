@@ -175,3 +175,128 @@ footer a {
 
 
 
+
+
+
+
+
+
+
+/* pag resumos*/
+.maincard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor3);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 0  #0000002c ;
+    background-color: var(--cor1);
+}
+
+.container .card .icon{
+    margin-bottom: 6px;
+
+}
+.container .card .icon img{
+    width: 300px;
+    height: 200px;
+}
+.container .card .content{
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+    text-align: justify;
+}
+.container .card .content > h3{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.container .card .content::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, var(--cor1));
+}
+.container .card .more{
+    position: relative;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.container .card .more:hover{
+    color: var(--cor2);
+    transform: scale(1.1); 
+    
+}
+.container .card .more::before{
+    content: 'Leia mais';
+}
+.container .card.active .more::before{
+    content: 'Leia menos';    
+}
+.container .card.active .more{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .card.active .icon img{
+    width: 500px;
+    height: 250px;
+
+}
+.container .card.active .content{
+    height: auto ;
+    
+}
+.container .card.active .content::before{
+    display: none;
+}
+
+#fade.hide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    z-index: 1;
+}
+
+
+.card.active{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 500px;
+    height: auto;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    margin: auto;
+}
+
+
+
