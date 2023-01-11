@@ -215,19 +215,19 @@ footer a {
     width: 300px;
     height: 200px;
 }
-.container .card .content{
+.container .card .rcontent{
     position: relative;
     height: 215px;
     overflow: hidden;
     text-align: justify;
 }
-.container .card .content > h3{
+.container .card .rcontent > h3{
     text-align: center;
     color: #ffffff;
     margin-bottom: 10px;
 }
 
-.container .card .content::before{
+.container .card .rcontent::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -265,11 +265,11 @@ footer a {
     height: 250px;
 
 }
-.container .card.active .content{
+.container .card.active .rcontent{
     height: auto ;
     
 }
-.container .card.active .content::before{
+.container .card.active .rcontent::before{
     display: none;
 }
 
@@ -300,3 +300,61 @@ footer a {
 
 
 
+.body{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainquiz{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .spnQtd {
+    text-align: end;
+  }
+  
+  .answers {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  
+  button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CCC;
+    color: white;
+  }
+  
+  .finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .finish button {
+    text-align: center;
+  }
