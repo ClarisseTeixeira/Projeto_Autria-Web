@@ -95,6 +95,8 @@ footer {
 .elerodape {
     padding: 10px;
     margin: auto;
+    padding-right: 150px;
+
 }
 
 .elerodape a,
@@ -149,7 +151,11 @@ footer a {
     position: relative;
 
 }
-
+@media(max-width: 600px){
+    .elerodape{
+        padding-right: 0;
+    }
+}
 /*Responsividade da página principal*/ 
 @media(max-width: 800px) {
 
@@ -170,7 +176,7 @@ footer a {
         text-align: center;
         margin-top: 10px;
     }
-
+    
 }
 
 
@@ -298,6 +304,7 @@ footer a {
     margin: auto;
 }
 
+/*--------------------------------QUIZ--------------------------------*/
 
 
 .body{
@@ -305,15 +312,15 @@ footer a {
     padding: 10px;
     border-radius: 10px;
     width: 100%;
-    max-width: 300px;
-    min-height: 200px;
+    max-width: 450px;
+    min-height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #mainquiz{
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -325,36 +332,51 @@ footer a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
+    padding: 8px;
   }
-  
-  .spnQtd {
-    text-align: end;
+  .question{
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
   }
   
   .answers {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
+    grid-template-columns: 200px 200px;
+    gap: 20px;
+    justify-content: center;
+    margin-right: -15px;
+    
   }
   
   button {
-    width: 100%;
+    width: 90%;
     text-align: start;
-    padding: 5px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    background-color: #008CCC;
-    color: white;
-  }
-  
+    background-color: #ffffff;
+    color: var(--cor1);
+    height: 35px;
+    text-align: center;
+    font-size: 1em;
+}
+
   .finish {
     display: none;
     flex-direction: column;
     gap: 10px;
-  }
+    align-items: center;
+    font-size: 1.5em;
+}
+.finish span{    
+    color: #ffffff;
+}
   
   .finish button {
     text-align: center;
+  }
+
+  .img{
+    width: 350px;
   }

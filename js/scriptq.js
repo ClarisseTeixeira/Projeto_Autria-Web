@@ -1,7 +1,6 @@
-
+const img = document.querySelector(".img");
 const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
-const spnQtd = document.querySelector(".spnQtd");
 const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
@@ -35,14 +34,15 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
+  textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
 
 function loadQuestion() {
-  spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
   const item = questions[currentIndex];
+  img.innerHTML = item.img;
+  img.setAttribute('src', 'img/'+item.img)
   answers.innerHTML = "";
   question.innerHTML = item.question;
 
