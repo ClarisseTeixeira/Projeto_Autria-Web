@@ -22,7 +22,7 @@ export default[
     },
 
     {
-        img: 'quizpikachu.webp',
+        img: 'quiztoystory.png',
         question: "pergunta 3",
         answers: [
             { option: "1", correct: true},

@@ -37,6 +37,7 @@ function finish() {
   textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
+  img.style.display = "none";
 }
 
 function loadQuestion() {
@@ -61,6 +62,8 @@ function loadQuestion() {
   document.querySelectorAll(".answer").forEach((item) => {
     item.addEventListener("click", nextQuestion);
   });
+  
+  img.style.display = "block";
 }
 
 loadQuestion();
