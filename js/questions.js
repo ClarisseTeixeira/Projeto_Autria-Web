@@ -1,6 +1,7 @@
 export default[
     {
         img: 'quizbobesponja.png',
+        alt: 'lá ele',
         question: "pergunta 1",
         answers: [
             { option: "1", correct: true},
@@ -12,6 +13,7 @@ export default[
     
     {
         img: 'quiztoystory.png',
+        alt: 'lá ele',
         question: "pergunta 2",
         answers: [
             { option: "1", correct: true},
@@ -23,6 +25,7 @@ export default[
 
     {
         img: 'quiztoystory.png',
+        alt: 'lá ele',
         question: "pergunta 3",
         answers: [
             { option: "1", correct: true},
@@ -34,6 +37,7 @@ export default[
 
     {
         img: 'quizbobesponja.png',
+        alt: 'lá ele',
         question: "pergunta 4",
         answers: [
             { option: "1", correct: true},
@@ -45,6 +49,7 @@ export default[
 
     {
         img: 'quizbobesponja.png',
+        alt: 'lá ele',
         question: "pergunta 5",
         answers: [
             { option: "1", correct: true},

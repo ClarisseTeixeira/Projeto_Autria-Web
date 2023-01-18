@@ -42,8 +42,8 @@ function finish() {
 
 function loadQuestion() {
   const item = questions[currentIndex];
-  img.innerHTML = item.img;
   img.setAttribute('src', 'img/'+item.img)
+  img.setAttribute('alt', item.alt)
   answers.innerHTML = "";
   question.innerHTML = item.question;
 
