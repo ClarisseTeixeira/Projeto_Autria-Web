@@ -39,7 +39,6 @@ header>h1 {
     font-size: 30px;
     padding: 30px;
     margin-left: 60px;
-
 }
 
 span {
@@ -49,8 +48,6 @@ span {
 nav {
     padding: 10px;
     margin-left: 80px;
-
-
 }
 
 nav ul,
@@ -163,7 +160,7 @@ footer a {
     color: var(--cor3);
 }
 
-.container {
+.container{
     position: relative;
     display: flex;
     justify-content: center;
@@ -254,7 +251,6 @@ footer a {
     height: auto;
 
 }
-
 .container .card.active .rcontent::before {
     display: none;
 }
@@ -278,7 +274,7 @@ footer a {
     z-index: 2;
     width: 500px;
     height: auto;
-    max-width: 80%;
+    max-width: 90%;
     padding: 1.2rem;
     border-radius: 3rem;
     margin: auto;
@@ -364,6 +360,7 @@ footer a {
 .container .card-1.active .icon img {
     width: 400px;
     height: 250px;
+    border-radius: 15px 15px 0 0;
 
 }
 
@@ -439,7 +436,7 @@ footer a {
 
 }
 
-button {
+.buttonquiz {
     width: 90%;
     text-align: start;
     border: none;
@@ -472,17 +469,17 @@ button {
     height: 230px;
 }
 
-form {
+form{
     color: var(--cor1);
     font-size: 1.3em;
-    padding: 10px 10px 0 100px;
+    width: 400px;
+    margin: auto;
 
 }
 label{
     display: block;
 }
 input {
-
     flex-direction: column;
     border: none;
     height: 30px;
@@ -497,18 +494,40 @@ input[type="radio"] {
 
 .form {
     margin: 20px 0 20px 0;
-
 }
 
-.iniciarquiz {
+.iniciarquiz{
     background-color: var(--cor1);
     color: #ffffff;
-    width: 200px;
     border-radius: 3px;
+    height: 35px;
+    width: 200px;
+    font-size: 1em;
+    border: none;
+    margin-left: 25% ;
 }
 
 
+@media(max-width: 800px){
 
+    #pagprincipal>.secaopp {
+        flex-direction: column;
+    }
+
+    .secaopp.row-reverse {
+        flex-direction: column;
+    }
+    #pagprincipal {
+        width: 380px;
+        margin: auto;
+    }
+
+    .contsecao>h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+}
 
 @media(max-width: 600px) {
     .elerodape {
@@ -520,26 +539,32 @@ input[type="radio"] {
         width: 60%;
         height: 80%;
     }
+    
 }
 
-/*Responsividade da página principal*/
-@media(max-width: 800px) {
 
-    #pagprincipal>.secaopp {
-        flex-direction: column;
+@media(max-width: 450px){
+    nav {
+        padding: 10px;
+        margin-left: 10px;
     }
-
-    .secaopp.row-reverse {
-        flex-direction: column;
+    .titulorodape>h1{
+        display: none;
     }
-
     #pagprincipal {
-        width: 380px;
-        margin: auto;
+        width: 250px;
     }
 
-    .contsecao>h1 {
-        text-align: center;
-        margin-top: 10px;
-    }
+}
+
+@media(max-width: 300px){
+    nav ul,
+    nav li {
+    margin-right: 7px;
+}
+
+#pagprincipal {
+    width: 200px;
+}
+    
 }

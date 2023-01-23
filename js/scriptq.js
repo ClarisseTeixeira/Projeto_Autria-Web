@@ -4,7 +4,7 @@ const answers = document.querySelector(".answers");
 const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
-const btnRestart = document.querySelector(".finish button");
+const btnRestart = document.querySelector(".finish .buttonquiz");
 
 import questions from "./questions.js";
 
@@ -51,7 +51,7 @@ function loadQuestion() {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    <button class="answer" data-correct="${answer.correct}">
+    <button class="answer buttonquiz" data-correct="${answer.correct}">
       ${answer.option}
     </button>
     `;
