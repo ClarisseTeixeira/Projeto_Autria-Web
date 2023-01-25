@@ -161,7 +161,7 @@ footer a {
 
 }
 
-.container{
+.container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -251,6 +251,7 @@ footer a {
     height: auto;
 
 }
+
 .container .card.active .rcontent::before {
     display: none;
 }
@@ -360,7 +361,7 @@ footer a {
 .container .card-1.active .icon img {
     width: 100%;
     height: 250px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
 .container .card-1.active .rcontent {
@@ -407,9 +408,11 @@ footer a {
     flex-direction: column;
     gap: 5px;
 }
-.tituloquiz{
+
+.tituloquiz {
     color: var(--cor1);
 }
+
 .mainquiz .tituloquiz {
     padding: 50px 0 20px 40px;
 }
@@ -468,15 +471,18 @@ footer a {
     height: 230px;
 }
 
-form{
+form {
     color: var(--cor1);
     font-size: 1.3em;
     width: 400px;
     margin: auto;
 }
-label{
+
+label {
+    padding: 7px;
     display: block;
 }
+
 input {
     flex-direction: column;
     border: none;
@@ -494,7 +500,7 @@ input[type="radio"] {
     margin: 20px 0 20px 0;
 }
 
-.iniciarquiz{
+.iniciarquiz {
     background-color: var(--cor1);
     color: #ffffff;
     border-radius: 3px;
@@ -502,11 +508,11 @@ input[type="radio"] {
     width: 200px;
     font-size: 1em;
     border: none;
-    margin-left: 25% ;
+    margin-left: 25%;
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 800px) {
 
     #pagprincipal>.secaopp {
         flex-direction: column;
@@ -515,6 +521,7 @@ input[type="radio"] {
     .secaopp.row-reverse {
         flex-direction: column;
     }
+
     #pagprincipal {
         width: 380px;
         margin: auto;
@@ -524,7 +531,7 @@ input[type="radio"] {
         text-align: center;
         margin-top: 10px;
     }
-    
+
 }
 
 @media(max-width: 600px) {
@@ -532,26 +539,26 @@ input[type="radio"] {
         padding-right: 0;
     }
 
-    .card.active, .card-1.active {
+    .card.active,
+    .card-1.active {
         overflow-y: scroll;
-        width: 60%;
-        height: 80%;
+        width: 70%;
+        height: 60%;
     }
-    .card-1.active .icon img{
-        width: 100px;
-    }
-    
+
 }
 
 
-@media(max-width: 450px){
+@media(max-width: 450px) {
     nav {
         padding: 10px;
         margin-left: 10px;
     }
-    .titulorodape>h1{
+
+    .titulorodape>h1 {
         display: none;
     }
+
     #pagprincipal {
         width: 250px;
     }
@@ -559,63 +566,85 @@ input[type="radio"] {
     input {
         width: 300px;
     }
-    form{
+
+    form {
         width: 300px;
         margin: auto;
-    
+
     }
-    .iniciarquiz{
-        margin-left: 15% ;
+
+    .iniciarquiz {
+        margin-left: 15%;
     }
+
     .body {
         width: 350px;
         height: 300px;
     }
+
     .answers {
         width: 250px;
         display: flex;
         flex-direction: column;
     }
-    .img{
+
+    .img {
         width: 200px;
     }
 
+    .container .card-1,
+    .container .card {
+        padding: 10px;
+        margin: 10px 0;
+    }
 }
+@media(max-width: 350px) {
 
-@media(max-width: 300px){
     nav ul,
     nav li {
-    margin-right: 7px;
-}
+        margin-right: 7px;
+    }
 
-#pagprincipal {
-    width: 200px;
-}
-input {
-    width: 220px;
-}
-form{
-    width: 222px;
-    margin: auto;
+    #pagprincipal {
+        width: 200px;
+    }
 
-}
-.iniciarquiz{
-    width: 100px;
-    margin-left: 25%;
-}
-.tituloquiz {
-    padding: 0;
-}
-.container .card-1, .container .card {
-    padding: 10px;
-    margin: 10px 0;
-}
-.body {
-    width: 250px;
-}
-.answers {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-}
+    input {
+        width: 220px;
+    }
+
+    form {
+        width: 222px;
+        margin: auto;
+
+    }
+
+    .iniciarquiz {
+        width: 100px;
+        margin-left: 25%;
+    }
+
+    .tituloquiz {
+        padding: 0;
+        font-size: 1.5em;
+    }
+
+    .body {
+        width: 250px;
+    }
+
+    .answers {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .card-1,
+    .container .card {
+        width: 230px;
+    }
+
+    .container .card .icon img, .container .card-1 .icon img {
+        width: 230px;
+    }
+
 }
