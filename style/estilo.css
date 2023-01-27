@@ -30,15 +30,15 @@ header,
 footer {
     background-color: var(--cor1);
     height: 100px;
-    color: #ffffff;
 }
 
-header>h1 {
+header> a> h1 {
     height: 36px;
     font-weight: 700;
     font-size: 30px;
     padding: 30px;
     margin-left: 60px;
+    color: #ffffff;
 }
 
 span {
@@ -60,13 +60,16 @@ nav li {
 nav a {
     color: #000000;
 }
-
+nav a:hover{ 
+    transition: 0.3s;
+    color: #00000071;
+}
 a {
     text-decoration: none;
 }
 
 
-footer>div>img {
+footer>div> .linkimg > img {
     width: 32px;
     height: 32px;
     margin-left: 30px;
@@ -82,7 +85,7 @@ footer {
     display: flex;
 }
 
-.titulorodape>h1 {
+.titulorodape> a >h1 {
     color: #ffffff;
     padding: 15px;
     width: 20%;
@@ -100,7 +103,9 @@ footer {
 .elerodape p {
     margin-top: 5px;
 }
-
+.elerodape p{
+    color: #ffffff;
+}
 footer a {
     color: hsl(0, 5%, 71%);
 }
@@ -115,9 +120,10 @@ footer a {
     align-items: center;
     margin: auto;
     justify-content: space-between;
+    padding: 20px;
 }
 
-.contsecao>h1 {
+.contsecao> a >h1 {
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
@@ -132,10 +138,7 @@ footer a {
     text-align: justify;
 }
 
-.imgsecao>img {
-    width: 264px;
-    height: 264px;
-}
+
 
 .secaopp.row-reverse {
     flex-direction: row-reverse;
@@ -223,8 +226,8 @@ footer a {
 }
 
 .container .card .more:hover {
-    color: var(--cor2);
-    transform: scale(1.1);
+    color: #b6cdfc;
+    transform: 0.5s;
 
 }
 
@@ -402,7 +405,7 @@ footer a {
 }
 
 #campoquiz {
-    margin: 50px 0 100px 0;
+    margin-bottom: 70px ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -467,10 +470,12 @@ footer a {
 .finish button {
     text-align: center;
 }
-
+.iniciarquiz:hover{
+    transition: 0.5s;
+    background-color: #6a3acbbb;
+}
 .img {
     width: 350px;
-    height: 230px;
 }
 
 form {
@@ -586,13 +591,18 @@ input[type="radio"] {
     }
 
     .img {
-        width: 200px;
+        width: 300px;
     }
 
     .container .card-1,
     .container .card {
         padding: 10px;
         margin: 10px 0;
+    }
+    
+    .form .tituloquiz {
+        padding: 0;
+        font-size: 1.5em;
     }
 
 }   
@@ -618,14 +628,10 @@ input[type="radio"] {
     }
 
     .iniciarquiz {
-        width: 100px;
-        margin-left: 25%;
+        width: 150px;
+        margin-left: 15%;
     }
 
-    .tituloquiz {
-        padding: 0;
-        font-size: 1.5em;
-    }
 
     .container .card-1,
     .container .card {
@@ -639,6 +645,13 @@ input[type="radio"] {
     #campoquiz{
         padding: 20px;
     }
-
-
+    .form .tituloquiz {
+        font-size: 1.2em;
+    }
+    .mainquiz .tituloquiz{
+        font-size: 1.5em;
+    }
+    .img{
+        width: 230px;
+    }
 }
