@@ -344,8 +344,8 @@ footer a {
 }
 
 .container .card-1 .more:hover {
-    color: var(--cor2);
-    transform: scale(1.1);
+    color: #b6cdfc;
+    transform: 0.5s;
 
 }
 
