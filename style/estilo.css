@@ -393,8 +393,9 @@ footer a {
 .body {
     background-color: var(--cor1);
     border-radius: 10px;
-    width: 450px;
-    height: 180px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,6 +408,7 @@ footer a {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    padding: 60px;
 }
 
 .tituloquiz {
@@ -439,7 +441,7 @@ footer a {
 }
 
 .buttonquiz {
-    width: 90%;
+    width: 95%;
     text-align: start;
     border: none;
     cursor: pointer;
@@ -489,6 +491,7 @@ input {
     height: 30px;
     width: 390px;
     border-radius: 8px;
+    font-size: 1em;
 }
 
 input[type="radio"] {
@@ -545,11 +548,13 @@ input[type="radio"] {
         width: 70%;
         height: 60%;
     }
-
+    .body{
+        width: auto;
+    }
 }
 
 
-@media(max-width: 450px) {
+@media(max-width: 470px) {
     nav {
         padding: 10px;
         margin-left: 10px;
@@ -570,20 +575,12 @@ input[type="radio"] {
     form {
         width: 300px;
         margin: auto;
-
     }
 
     .iniciarquiz {
         margin-left: 15%;
     }
-
-    .body {
-        width: 350px;
-        height: 300px;
-    }
-
     .answers {
-        width: 250px;
         display: flex;
         flex-direction: column;
     }
@@ -597,7 +594,8 @@ input[type="radio"] {
         padding: 10px;
         margin: 10px 0;
     }
-}
+
+}   
 @media(max-width: 350px) {
 
     nav ul,
@@ -629,15 +627,6 @@ input[type="radio"] {
         font-size: 1.5em;
     }
 
-    .body {
-        width: 250px;
-    }
-
-    .answers {
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-    }
     .container .card-1,
     .container .card {
         width: 230px;
@@ -646,5 +635,10 @@ input[type="radio"] {
     .container .card .icon img, .container .card-1 .icon img {
         width: 230px;
     }
+    
+    #campoquiz{
+        padding: 20px;
+    }
+
 
 }
