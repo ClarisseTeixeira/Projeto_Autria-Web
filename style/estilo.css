@@ -181,6 +181,7 @@ footer a {
     border-radius: 8px;
     box-shadow: 3px 3px 0 0 #0000002c;
     background-color: var(--cor1);
+    height: 400px;
 }
 
 .container .card .icon {
@@ -195,7 +196,7 @@ footer a {
 
 .container .card .rcontent {
     position: relative;
-    height: 215px;
+    height: 180px;
     overflow: hidden;
     text-align: justify;
 }
