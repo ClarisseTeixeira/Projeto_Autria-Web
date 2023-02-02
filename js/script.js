@@ -1,4 +1,4 @@
-const fade = document.querySelector("#fade");
+const fade = document.querySelector(".fade");
 let more = document.querySelectorAll('.more')
 
 for (let i = 0;i <more.length; i++ ){
